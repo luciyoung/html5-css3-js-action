@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wk {
+    z-index: 999;
+    width: 200px;
+    height: 180px;
+    background: url(images/west_wk.png) 0 0 no-repeat;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    animation: wkzou 1s steps(8) infinite;
+}
+
+@keyframes wkzou {
+    to {
+        background-position: -1600px 0;
+        /* 自动计算，总长，几个像素*/
+    }
+}
+
+.bj {
+    z-index: 999;
+    width: 200px;
+    height: 180px;
+    background: url(images/west_bj.png) 0 0 no-repeat;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    animation: bjzou 1s steps(8) infinite;
+}
+
+@keyframes bjzou {
+    to {
+        background-position: -1600px;
+    }
+}
+
+.ts {
+    z-index: 999;
+    width: 190px;
+    height: 180px;
+    background: url(images/west_sf.png) 0 0 no-repeat;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    animation: sfzou 1s steps(8) infinite;
+}
+
+@keyframes sfzou {
+    to {
+        background-position: -1360px 0;
+        /* 自动计算，总长，几个像素*/
+    }
+}
+
+.ss {
+    z-index: 999;
+    width: 210px;
+    height: 200px;
+    background: url(images/west_shs.png) 0 0 no-repeat;
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    animation: sszou 1s steps(8) infinite;
+}
+
+@keyframes sszou {
+    to {
+        background-position: -1680px 0;
+    }
+}
+
+
+/* 背景图轮播 */
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.main ul {
+    height: 100%;
+    width: 3920px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: dong 50s linear infinite;
+}
+
+@keyframes dong {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 1920px;
+    }
+}
+
+.main ul .li-one {
+    height: 100%;
+    width: 100%;
+    background: url(images/bac-o.png);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: -2000px;
+}
+
+.main ul .li-two {
+    height: 100%;
+    width: 100%;
+    background: url(images/bac-o.jpg);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: -2000px;
+}
